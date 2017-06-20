@@ -1,19 +1,11 @@
----
-title       : Developing Data Products
-author      : Ekata Rajmohan Mishra
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
----
+US Rig Count Dataset Explorer  
+========================================================
+author: Ekata Rajmohan Mishra
+date: 6/21/2017
+autosize: true
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-## US Rig Count Dataset Explorer  
+========================================================
 
 This Shiny App is for searching and visulizating US Rig Count information from year 1987 to 2015. The total number of records is 333, seperated across Onshore, Offshore, Crude Oil and Natura Gas Rigs.
 The dataset is from U.S. Energy Information Administration (http://www.eia.gov/dnav/ng/NG_ENR_DRILL_S1_M.htm).  
@@ -25,18 +17,20 @@ About author: [Ekata Mishra](https://www.linkedin.com/in/ekata-mishra-09821053/)
 
 Link to Source Files: [GitHub](https://github.com/ekata-mishra/Developing-Data-Products)
 
---- .class #id 
+The Data for the Rig Counts
+========================================================
 
-# The Data for the Rig Counts
 ```{r echo=FALSE}
 require(xlsx)
-require(base64enc)
 library(data.table)
+require(base64enc)
 library(dplyr)
 library(DT)
 library(rCharts)
 library(reshape)
 library(knitr)
+library(ggplot2)
+
 
 # Read data
 data <- read.xlsx("./Data/USRigCount.xlsx", sheetName = "Aggregated", header=TRUE)
@@ -50,18 +44,14 @@ flatdata<-melt(data[,c("Date","Year","Onshore","Offshore","CrudeOil","NaturalGas
 # Explorations and data checks
 head(data)
 ```
-# Melted Flat Dataset
 
-```{r echo=FALSE}
-head(flatdata)
-```
 
---- .class #id 
 
-## Total Number of Rig Counts in the US for each type
+Total Number of Rig Counts in the US for each type
+========================================================
 
 ```{r echo=FALSE, comment = NA, results = "asis"}
-  library(knitr)
+
   RigsByYear <- nPlot(
     value ~ Date,
     group = 'variable',
@@ -80,9 +70,9 @@ head(flatdata)
   RigsByYear 
 ```
 
---- .class #id 
 
-## Total Number of Rig Counts in the US
+Total Number of Rig Counts in the US
+========================================================
 
 ```{r echo=FALSE, comment = NA, results = "asis"}
   library(knitr)
@@ -102,5 +92,3 @@ head(flatdata)
   RigsByYear$xAxis(tickFormat ="#! function(d) {return d3.time.format('%Y/%m')(new Date(d*1000*3600*24));} !#")
   RigsByYear  
 ```
-
-

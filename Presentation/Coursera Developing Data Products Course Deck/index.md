@@ -1,8 +1,6 @@
 ---
 title       : Developing Data Products
-subtitle    : Project Deck
 author      : Ekata Rajmohan Mishra
-job         : Homemaker
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -10,6 +8,8 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
+
+
 
 ## US Rig Count Dataset Explorer  
 
@@ -19,9 +19,9 @@ The dataset is from U.S. Energy Information Administration (http://www.eia.gov/d
 Data Source: http://www.eia.gov/dnav/ng/NG_ENR_DRILL_S1_M.htm  
 Date updated: 01/05/2016
   
-About author: [Kadri Umay](http://www.linkedin.com/in/kadriumay)
+About author: [Ekata Mishra](https://www.linkedin.com/in/ekata-mishra-09821053/)
 
-Link to Source Files: [GitHub](https://github.com/KadriUmay/Coursera-Developing-Data-Products)
+Link to Source Files: [GitHub](https://github.com/ekata-mishra/Developing-Data-Products)
 
 --- .class #id 
 

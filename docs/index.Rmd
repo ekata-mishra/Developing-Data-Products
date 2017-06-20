@@ -31,7 +31,6 @@ Link to Source Files: [GitHub](https://github.com/ekata-mishra/Developing-Data-P
 ```{r echo=FALSE}
 require(xlsx)
 require(base64enc)
-library(data.table)
 library(dplyr)
 library(DT)
 library(rCharts)
@@ -39,12 +38,12 @@ library(reshape)
 library(knitr)
 
 # Read data
-data <- read.xlsx("./Data/USRigCount.xlsx", sheetName = "Aggregated", header=TRUE)
-setnames(data, "Total.Rigs", "TotalNumberofRigs")
-setnames(data, "Crude.Oil", "CrudeOil")
-setnames(data, "Natural.Gas", "NaturalGas")
+ddata <- read.xlsx("./Data/USRigCount.xlsx", sheetName = "Aggregated", header=TRUE)
+setNames(data, "Total.Rigs", "TotalNumberofRigs")
+setNames(data, "Crude.Oil", "CrudeOil")
+setNames(data, "Natural.Gas", "NaturalGas")
 data$Year<-as.POSIXlt(data$Date)$year+1900
-setnames(data, "Year", "Year")
+setNames(data, "Year", "Year")
 flatdata<-melt(data[,c("Date","Year","Onshore","Offshore","CrudeOil","NaturalGas")], id=c("Date","Year"))
 
 # Explorations and data checks

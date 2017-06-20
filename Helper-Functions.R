@@ -9,11 +9,11 @@ library(reshape)
 
 # Read data
 data <- read.xlsx("./Data/USRigCount.xlsx", sheetName = "Aggregated", header=TRUE)
-setnames(data, "Total.Rigs", "TotalNumberofRigs")
-setnames(data, "Crude.Oil", "CrudeOil")
-setnames(data, "Natural.Gas", "NaturalGas")
+setNames(data, "Total.Rigs", "TotalNumberofRigs")
+setNames(data, "Crude.Oil", "CrudeOil")
+setNames(data, "Natural.Gas", "NaturalGas")
 data$Year<-as.POSIXlt(data$Date)$year+1900
-setnames(data, "Year", "Year")
+setNames(data, "Year", "Year")
 flatdata<-melt(data[,c("Date","Year","Onshore","Offshore","CrudeOil","NaturalGas")], id=c("Date","Year"))
 
 # Explorations and data checks
@@ -110,3 +110,4 @@ plotRigCountByYearAndRigType <- function(dt, dom = "RigsByYearAndRigType",
   RigsByYear$xAxis(tickFormat ="#! function(d) {return d3.time.format('%Y/%m')(new Date(d*1000*3600*24));} !#")
   RigsByYear 
   }
+
