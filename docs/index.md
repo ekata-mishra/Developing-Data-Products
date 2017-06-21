@@ -49,10 +49,14 @@ Link to Source Files: [GitHub](https://github.com/ekata-mishra/Developing-Data-P
 ## 6 1988-01-01 1988  Onshore   949
 ```
 
-
+--- .class #id 
+</br>
 ## Total Number of Rig Counts in the US for each type
+</br>
+<div style='text-align: center;'>
+    <img height='475' src='.assets/fig/fig1.png'/>
+</div>
 
-<iframe src=' assets/fig/fig1.png' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart4fd9718880c7 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 
 ## Total Number of Rig Counts in the US
