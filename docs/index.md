@@ -59,10 +59,7 @@ Link to Source Files: [GitHub](https://github.com/ekata-mishra/Developing-Data-P
 </div>
 
 
---- .class #id 
-
-
-
+--- .class #id
 </br>
 ## Total Number of Rig Counts in the US
 </br>
