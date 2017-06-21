@@ -54,13 +54,16 @@ Link to Source Files: [GitHub](https://github.com/ekata-mishra/Developing-Data-P
 ## Total Number of Rig Counts in the US for each type
 </br>
 <div style='text-align: center;'>
-    <img height='475' src='.assets/fig/fig1.png'/>
+    <img height='400' src='assets/fig/unnamed-chunk-3-1.html'/>
 </div>
 
 
 
 ## Total Number of Rig Counts in the US
 
-<iframe src='assets/fig/unnamed-chunk-4-1.html' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart4fd9774527bc ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+</br>
+<div style='text-align: center;'>
+    <img height='400' src='assets/fig/unnamed-chunk-4-1.html'/>
+</div>
 
 
