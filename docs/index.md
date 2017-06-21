@@ -1,6 +1,8 @@
 ---
 title       : Developing Data Products
+subtitle    : Project Deck
 author      : Ekata Rajmohan Mishra
+job         : Homemaker
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -8,8 +10,6 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
-
-
 
 ## US Rig Count Dataset Explorer  
 
@@ -53,12 +53,12 @@ Link to Source Files: [GitHub](https://github.com/ekata-mishra/Developing-Data-P
 
 ## Total Number of Rig Counts in the US for each type
 
-<iframe src=' assets/fig/unnamed-chunk-3-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart6b4c4f2c481c ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/unnamed-chunk-3-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart4fd9718880c7 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 --- .class #id 
 
 ## Total Number of Rig Counts in the US
 
-<iframe src=' assets/fig/unnamed-chunk-4-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart6b4c2da4a85 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/unnamed-chunk-4-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart4fd9774527bc ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 

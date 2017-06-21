@@ -1,6 +1,8 @@
 ---
 title       : Developing Data Products
+subtitle    : Project Deck
 author      : Ekata Rajmohan Mishra
+job         : Homemaker
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -8,10 +10,6 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## US Rig Count Dataset Explorer  
 
@@ -31,7 +29,6 @@ Link to Source Files: [GitHub](https://github.com/ekata-mishra/Developing-Data-P
 ```{r echo=FALSE}
 require(xlsx)
 require(base64enc)
-library(data.table)
 library(dplyr)
 library(DT)
 library(rCharts)
@@ -39,7 +36,7 @@ library(reshape)
 library(knitr)
 
 # Read data
-data <- read.xlsx("./Data/USRigCount.xlsx", sheetName = "Aggregated", header=TRUE)
+data <- read.xlsx("./data/USRigCount.xlsx", sheetName = "Aggregated", header=TRUE)
 setnames(data, "Total.Rigs", "TotalNumberofRigs")
 setnames(data, "Crude.Oil", "CrudeOil")
 setnames(data, "Natural.Gas", "NaturalGas")
